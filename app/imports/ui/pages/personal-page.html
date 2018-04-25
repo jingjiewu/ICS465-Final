@@ -1,0 +1,36 @@
+<template name="Personal_Page">
+
+  <div style="margin-top:20px" class="ui personal container">
+
+    <form class="ui form contact-data-form {{ errorClass }}">
+      <h4 class="ui dividing header">Add Gym Buddy</h4>
+      <div class="field">
+        <div class="two fields">
+          {{> Text_Form_Control label="First" required=true }}
+          {{> Text_Form_Control label="Last" required=true }}
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="two fields">
+          {{> Text_Form_Control label="Email" required=true }}
+          {{> Text_Form_Control label="Telephone" required=true}}
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="two fields">
+          {{> Text_Form_Control label="Height" required=true}}
+          {{> Text_Form_Control label="Weight" required=true}}
+        </div>
+      </div>
+
+      <div class="field">
+        {{> TextArea_Form_Control label="Goal" required=true}}
+      </div>
+
+      <button class="ui button" type="submit">Submit</button>
+    </form>
+  </div>
+
+</template>

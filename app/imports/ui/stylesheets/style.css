@@ -1,0 +1,24 @@
+.ui.borderless.inverted.menu{
+  background-color: #043304;
+  margin: 0px;
+  border-radius: 0px;
+}
+
+.ui.text.container {
+  background-color: white;
+  margin-top: 50px;
+}
+
+
+.ui.personal.container{
+  background-color:  white;
+  margin-bottom: 80px;
+}
+
+.ui.three.column.grid.container{
+  margin-top: 20px;
+}
+
+footer{
+  background-image: url("/images/footer.png");
+}

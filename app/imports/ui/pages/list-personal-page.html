@@ -1,0 +1,35 @@
+<template name="List_Personal_Page">
+  <div class="ui container">
+    {{#if Template.subscriptionsReady}}
+    <table style="margin-top: 20px" class="ui celled table">
+      <thead>
+      <tr>
+        <th>First</th>
+        <th>Last</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Height</th>
+        <th>Weight</th>
+        <th>Goals</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      {{#each personal in personalsList}}
+      <tr>
+        <td>{{personal.first}}</td>
+        <td>{{personal.last}}</td>
+        <td>{{personal.email}}</td>
+        <td>{{personal.telephone}}</td>
+        <td>{{personal.height}}</td>
+        <td>{{personal.weight}}</td>
+        <td>{{personal.goals}}</td>
+      </tr>
+      {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+    {{> Loading}}
+    {{/if}}
+  </div>
+</template>
