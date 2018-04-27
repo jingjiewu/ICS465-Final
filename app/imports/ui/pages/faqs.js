@@ -3,10 +3,17 @@ import { Template } from 'meteor/templating';
 
 
 $('.ui.accordion')
-  .accordion()
+  .accordion('refresh')
 ;
 
-function backToTop() {
+/* function backToTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+} */
+Template.FAQ_Page.events({
+	'click .Back to Top'
+	{
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	},
+});
