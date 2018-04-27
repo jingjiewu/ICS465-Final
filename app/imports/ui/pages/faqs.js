@@ -2,7 +2,9 @@ import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 
 
-
+$('.ui.accordion')
+  .accordion()
+;
 
 function backToTop() {
     document.body.scrollTop = 0; // For Safari
