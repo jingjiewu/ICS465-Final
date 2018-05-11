@@ -26,6 +26,9 @@ import './create-event-modal.js';
 import './faqs.html';
 import './faqs.js';
 
+import './help.html';
+import './help.js';
+
 import './about.html';
 import './about.js';
 

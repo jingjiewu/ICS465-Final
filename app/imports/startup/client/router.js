@@ -71,6 +71,13 @@ FlowRouter.route('/faqs', {
   },
 });
 
+FlowRouter.route('/help', {
+  name: 'Help_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Help_Page' });
+  },
+});
+
 FlowRouter.route('/about', {
   name: 'About_Page',
   action() {

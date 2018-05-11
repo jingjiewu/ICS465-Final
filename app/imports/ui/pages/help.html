@@ -1,0 +1,69 @@
+<template name="Help_Page">
+ <div style="margin-top:20px" class="ui personal container">
+    <h2 class="ui centered dividing header">Help and Tutorial</h2>
+
+    <h3 class="ui centered dividing header">Screencast Tutorial</h3>
+
+    <div class="ui embed" data-source="youtube" data-id="" data-icon="video"></div>
+
+    <div class="ui center aligned segment">
+      <div class="ui styled fluid accordion">
+        <div class="title">
+          <h3 class="ui centered dividing header"> Installation Guide</h3>
+          <i class="dropdown icon"></i></div>
+        <div class="content">
+          <h4>To install and run our early Alpha build do the following:</h4>
+          <p>1. Install <a href="https://www.meteor.com/install">Meteor</a>.</p>
+
+          <p>2. <a href="https://github.com/jingjiewu/ICS465-Final">Download</a> a copy of manoa-gym-scheduler, or clone it using git.</p>
+
+          <p>3. cd into the app/ directory and install the following required libraries with:</p>
+          <div class="ui floating compact black message">
+            <p>$ meteor npm install</p>
+            <p>$ meteor npm install autoprefixer</p>
+          </div>
+          <p>4th. Run on your system by entering:</p>
+          <div class="ui floating compact black message">
+            <p>$ meteor --settings ../config/settings.development.json</p>
+          </div>
+          <p>If all goes well, the application will appear at http://localhost:3000.</p>
+          <p>If you have an account on the UH test CAS server, you can login.</p>
+          <h4>For technical difficulties and bug reports, please contact us at the email supplied in our footer below.</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui center aligned segment">
+      <div class="ui styled fluid accordion">
+        <div class="title">
+
+          <h3 class="ui centered dividing header"> Usage Guide</h3>
+          <i class="dropdown icon"></i></div>
+        <div class="content">
+          <p>Users first arrive on the Landing Page</p>
+          <h4>Landing page</h4>
+          <img class="ui fluid image" src="https://skylite-manoa.github.io/warrior-scheduler/images/home.png">
+          <p>First time, and non-logged-in users will arrive on this page</p>
+
+          <p>Next up users will have to login with their UH ID</p>
+          <h4>Log in page</h4>
+          <img class="ui fluid image" src="https://skylite-manoa.github.io/warrior-scheduler/images/CAS.png">
+          <p>After having logged in, all available services will become accessable.</p>
+          <h4>Logged in page</h4>
+          <img class="ui fluid image" src="https://skylite-manoa.github.io/warrior-scheduler/images/M3-logged-in.png">
+          <p>Users can add gym events and workouts to the calendar</p>
+          <h4>Logged in page</h4>
+          <img class="ui fluid image" src="https://skylite-manoa.github.io/warrior-scheduler/images/M3-Calendar.png">
+          <p>...to be filled in more later...</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="ui center aligned segment">
+      <button class="ui floated labeled icon button" type="toTop" onclick="backToTop()">
+    <i class="up arrow icon"></i>
+    Back to Top</button>
+    </div>
+  </div>
+</template>
